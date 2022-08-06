@@ -7,7 +7,11 @@ export default defineNuxtConfig({
     height: "5px",
   },
   /** CSS file configuration */
-  css: ["~/assets/css/main.css", "~/assets/css/style.css"],
+  css: [
+    "~/assets/css/main.css",
+    "~/assets/css/layout.css",
+    "~/assets/css/style.css",
+  ],
   /** Content files configuration */
   modules: ["@nuxt/content"],
   /** Tailwind CSS configuration */
@@ -22,4 +26,5 @@ export default defineNuxtConfig({
         ["email", "email_label", "logo"].includes(tag),
     },
   },
+  
 });

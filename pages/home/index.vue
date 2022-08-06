@@ -1,6 +1,9 @@
 <template>
-  <main>
-    <h2>Home page</h2>
-    <ContentDoc />
-  </main>
+  <HomeSection />
 </template>
+
+<script>
+export default {
+  scrollToTop: true,
+};
+</script>

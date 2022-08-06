@@ -1,16 +1,7 @@
-header {
-  @apply container mx-auto px-6 h-[var(--nav-height)] relative;
-  @apply sticky top-0 z-30  bg-inherit backdrop-blur-md;
-}
 logo > span {
   @apply text-black/70;
 }
-nav {
-  @apply flex justify-between items-center h-[var(--nav-height)];
-}
-main {
-  @apply container mx-auto px-6 flex flex-col justify-end h-[calc(100vh-calc(var(--nav-height)))];
-}
+
 .menu {
   @apply w-full;
 }
@@ -28,11 +19,6 @@ main {
 .menu > li:hover > a > span {
   @apply text-black/90;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
-}
-section {
-  @apply h-full flex items-center w-full;
-
-  @apply lg:justify-end lg:text-right;
 }
 
 footer {
@@ -60,9 +46,6 @@ footer .copyright {
   @apply text-black/50 py-4 block mx-auto w-fit text-xs;
   @apply md:mr-0;
 }
-#__nuxt > div {
-  @apply relative min-h-screen;
-}
 
 /* #__nuxt > div {
   @apply flex flex-col justify-between min-h-screen;
@@ -78,4 +61,27 @@ footer .copyright {
 
 .dropdown ul li {
   @apply block py-2 w-full;
+}
+
+.content {
+  @apply relative my-12;
+}
+.content > .shadow-tag {
+  @apply absolute text-6xl text-black/10 left-0 top-0 -translate-x-6 -translate-y-6 select-none;
+}
+
+.content h1 {
+  @apply text-3xl font-bold whitespace-nowrap;
+}
+
+.content h1 > span {
+  @apply px-1 text-white bg-black;
+}
+
+.content h3 {
+  @apply text-base font-bold;
+}
+
+.content p {
+  @apply text-sm text-neutral-500;
 }

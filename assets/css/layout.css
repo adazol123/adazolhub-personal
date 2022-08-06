@@ -1,0 +1,38 @@
+#__nuxt {
+  @apply container mx-auto px-6 flex flex-col justify-end min-h-full;
+}
+
+header {
+  @apply container -mx-6 px-6  relative w-[calc(100%+3rem)];
+  @apply sticky top-0 z-30  bg-inherit backdrop-blur-sm;
+}
+
+nav {
+  @apply flex justify-between items-center  h-[var(--nav-height)] text-xs sticky top-0;
+}
+
+main {
+  @apply min-h-[calc(100vh-calc(calc(var(--nav-height))+calc(var(--footer-height))))];
+}
+
+section {
+  @apply h-full flex flex-col items-start w-full;
+
+  @apply lg:justify-end lg:text-right;
+}
+section#__home {
+  @apply min-h-[calc(100vh-calc(calc(var(--nav-height))+calc(var(--footer-height))))]  w-full flex flex-row items-center;
+
+  @apply lg:justify-end lg:text-right;
+}
+
+.tech-stack-wrapper {
+  @apply w-full overflow-y-hidden overflow-x-scroll py-4;
+}
+.tech-stack {
+  @apply flex gap-8;
+}
+
+.tech-stack img {
+  @apply select-none h-10 object-contain opacity-50;
+}

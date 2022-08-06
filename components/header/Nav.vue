@@ -12,7 +12,7 @@
       <UiButtonDropdown v-if="toggleMenu" :toggle="toggleMenu" />
       <div
         v-if="toggleMenu"
-        class="fixed z-0 inset-0 w-full h-screen bg-transparent"
+        class="fixed inset-0 w-full h-screen"
         @click="() => (toggleMenu = !toggleMenu)"
       />
     </nav>
@@ -22,6 +22,4 @@
 import { DotsHorizontalIcon } from "@heroicons/vue/outline";
 
 const toggleMenu = ref(false);
-
-console.log(toggleMenu);
 </script>
